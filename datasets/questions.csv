@@ -1,0 +1,571 @@
+Question,Marks,Difficulty,Subject,Topic
+Define Artificial Intelligence,2,Easy,AI,Introduction to AI
+What is AI?,2,Easy,AI,Introduction to AI
+Define intelligent agent,2,Easy,AI,Intelligent Agents
+What is machine learning?,2,Easy,AI,Machine Learning Basics
+Define NLP,2,Easy,AI,Natural Language Processing
+What is robotics?,2,Easy,AI,Robotics
+Define expert system,2,Easy,AI,Expert Systems
+What is computer vision?,2,Easy,AI,Computer Vision
+Define heuristic search,2,Easy,AI,Search Algorithms
+What is automation?,2,Easy,AI,Applications of AI
+Define state space,2,Easy,AI,Problem Solving
+What is reasoning in AI?,2,Easy,AI,Knowledge Representation
+Define chatbot,2,Easy,AI,Natural Language Processing
+What is deep learning?,2,Easy,AI,Neural Networks
+Define search algorithm,2,Easy,AI,Search Algorithms
+What is Turing Test?,2,Easy,AI,Introduction to AI
+Define knowledge base,2,Easy,AI,Knowledge Representation
+What is uninformed search?,2,Easy,AI,Search Algorithms
+Define informed search,2,Easy,AI,Search Algorithms
+What is game playing in AI?,2,Easy,AI,Game Playing
+Differentiate AI and ML,2,Medium,AI,Machine Learning Basics
+Explain BFS algorithm,2,Medium,AI,Search Algorithms
+Explain DFS algorithm,2,Medium,AI,Search Algorithms
+What is fuzzy logic?,2,Medium,AI,Fuzzy Logic
+Explain minimax algorithm,2,Medium,AI,Game Playing
+What is supervised learning?,2,Medium,AI,Machine Learning Basics
+What is unsupervised learning?,2,Medium,AI,Machine Learning Basics
+Explain semantic networks,2,Medium,AI,Knowledge Representation
+What is reinforcement learning?,2,Medium,AI,Machine Learning Basics
+Explain hill climbing algorithm,2,Medium,AI,Search Algorithms
+Differentiate NLP and computer vision,2,Medium,AI,NLP and Computer Vision
+Explain planning in AI,2,Medium,AI,Planning
+What is predicate logic?,2,Medium,AI,Knowledge Representation
+Explain AI applications,2,Medium,AI,Applications of AI
+What is genetic algorithm?,2,Medium,AI,Evolutionary Computing
+Differentiate weak AI and strong AI,2,Medium,AI,Introduction to AI
+Explain heuristic function,2,Medium,AI,Search Algorithms
+What is constraint satisfaction problem?,2,Medium,AI,Problem Solving
+Explain knowledge representation,2,Medium,AI,Knowledge Representation
+What is machine perception?,2,Medium,AI,Computer Vision
+Explain alpha beta pruning,2,Hard,AI,Game Playing
+Differentiate A* and AO* algorithms,2,Hard,AI,Search Algorithms
+Explain Bayesian networks,2,Hard,AI,Probabilistic Reasoning
+Differentiate forward and backward chaining,2,Hard,AI,Expert Systems
+Explain adversarial search,2,Hard,AI,Game Playing
+Explain symbolic AI,2,Hard,AI,Knowledge Representation
+Explain uncertainty handling in AI,2,Hard,AI,Probabilistic Reasoning
+Differentiate reactive and deliberative agents,2,Hard,AI,Intelligent Agents
+Explain cognitive computing,2,Hard,AI,Advanced AI
+Explain intelligent systems,2,Hard,AI,Advanced AI
+Explain frame representation,2,Hard,AI,Knowledge Representation
+What are production rules in AI?,2,Hard,AI,Expert Systems
+Explain neural network architecture,2,Hard,AI,Neural Networks
+Explain heuristic optimization,2,Hard,AI,Optimization Techniques
+Differentiate propositional and predicate logic,2,Hard,AI,Knowledge Representation
+Explain AI problem formulation,2,Hard,AI,Problem Solving
+Describe expert system architecture,2,Hard,AI,Expert Systems
+Explain informed search strategies,2,Hard,AI,Search Algorithms
+Differentiate logic programming and AI,2,Hard,AI,Knowledge Representation
+Explain uncertainty in expert systems,2,Hard,AI,Expert Systems
+Explain AI applications,10,Easy,AI,Applications of AI
+Describe intelligent agents with examples,10,Easy,AI,Intelligent Agents
+Explain machine learning basics,10,Easy,AI,Machine Learning Basics
+Describe NLP applications,10,Easy,AI,Natural Language Processing
+Explain robotics in AI,10,Easy,AI,Robotics
+Describe heuristic search methods,10,Easy,AI,Search Algorithms
+Explain expert systems,10,Easy,AI,Expert Systems
+Describe computer vision concepts,10,Easy,AI,Computer Vision
+Explain search techniques in AI,10,Easy,AI,Search Algorithms
+Describe AI lifecycle,10,Easy,AI,Introduction to AI
+Explain BFS and DFS algorithms,10,Medium,AI,Search Algorithms
+Describe knowledge representation techniques,10,Medium,AI,Knowledge Representation
+Explain minimax algorithm with example,10,Medium,AI,Game Playing
+Describe reinforcement learning,10,Medium,AI,Machine Learning Basics
+Explain fuzzy logic systems,10,Medium,AI,Fuzzy Logic
+Describe semantic networks,10,Medium,AI,Knowledge Representation
+Explain hill climbing algorithm with example,10,Medium,AI,Search Algorithms
+Describe planning in AI systems,10,Medium,AI,Planning
+Explain supervised and unsupervised learning,10,Medium,AI,Machine Learning Basics
+Describe genetic algorithms,10,Medium,AI,Evolutionary Computing
+Explain alpha beta pruning in detail,10,Hard,AI,Game Playing
+Describe Bayesian networks with examples,10,Hard,AI,Probabilistic Reasoning
+Explain adversarial search strategies,10,Hard,AI,Game Playing
+Describe uncertainty handling in AI systems,10,Hard,AI,Probabilistic Reasoning
+Explain neural network architecture in AI,10,Hard,AI,Neural Networks
+Describe forward and backward chaining,10,Hard,AI,Expert Systems
+Explain cognitive computing systems,10,Hard,AI,Advanced AI
+Describe symbolic AI techniques,10,Hard,AI,Knowledge Representation
+Explain intelligent system architecture,10,Hard,AI,Advanced AI
+Describe constraint satisfaction problems,10,Hard,AI,Problem Solving
+Define Machine Learning,2,Easy,ML,Introduction to ML
+What is supervised learning?,2,Easy,ML,Supervised Learning
+What is unsupervised learning?,2,Easy,ML,Unsupervised Learning
+Define dataset,2,Easy,ML,Data Preprocessing
+What is classification?,2,Easy,ML,Classification
+What is regression?,2,Easy,ML,Regression
+Define training data,2,Easy,ML,Data Preprocessing
+What is testing data?,2,Easy,ML,Data Preprocessing
+Define feature engineering,2,Easy,ML,Feature Engineering
+What is clustering?,2,Easy,ML,Clustering
+Define neural network,2,Easy,ML,Neural Networks
+What is deep learning?,2,Easy,ML,Deep Learning
+Define prediction model,2,Easy,ML,Model Building
+What is model accuracy?,2,Easy,ML,Model Evaluation
+Define decision tree,2,Easy,ML,Decision Trees
+What is data preprocessing?,2,Easy,ML,Data Preprocessing
+Define reinforcement learning,2,Easy,ML,Reinforcement Learning
+What is linear regression?,2,Easy,ML,Regression
+Define confusion matrix,2,Easy,ML,Model Evaluation
+What is anomaly detection?,2,Easy,ML,Anomaly Detection
+Differentiate AI and ML,2,Medium,ML,Introduction to ML
+Explain KNN algorithm,2,Medium,ML,KNN
+Explain decision tree classifier,2,Medium,ML,Decision Trees
+Differentiate classification and regression,2,Medium,ML,Classification
+Explain logistic regression,2,Medium,ML,Regression
+What is random forest?,2,Medium,ML,Ensemble Learning
+Explain support vector machine,2,Medium,ML,SVM
+Explain model evaluation metrics,2,Medium,ML,Model Evaluation
+What is precision and recall?,2,Medium,ML,Model Evaluation
+Explain cross validation,2,Medium,ML,Model Evaluation
+Differentiate supervised and reinforcement learning,2,Medium,ML,Reinforcement Learning
+Explain feature scaling,2,Medium,ML,Feature Engineering
+What is dimensionality reduction?,2,Medium,ML,Dimensionality Reduction
+Explain Naive Bayes algorithm,2,Medium,ML,Naive Bayes
+Explain gradient descent,2,Medium,ML,Optimization
+What is hyperparameter tuning?,2,Medium,ML,Model Optimization
+Explain ensemble learning,2,Medium,ML,Ensemble Learning
+Differentiate bagging and boosting,2,Medium,ML,Ensemble Learning
+Explain clustering algorithms,2,Medium,ML,Clustering
+What is recommendation system?,2,Medium,ML,Recommendation Systems
+Explain PCA algorithm,2,Hard,ML,Dimensionality Reduction
+Differentiate CNN and RNN,2,Hard,ML,Deep Learning
+Explain backpropagation algorithm,2,Hard,ML,Deep Learning
+What is transfer learning?,2,Hard,ML,Deep Learning
+Explain bias variance tradeoff,2,Hard,ML,Model Optimization
+Differentiate L1 and L2 regularization,2,Hard,ML,Model Optimization
+Explain reinforcement learning process,2,Hard,ML,Reinforcement Learning
+What is stochastic gradient descent?,2,Hard,ML,Optimization
+Explain feature selection techniques,2,Hard,ML,Feature Engineering
+Differentiate generative and discriminative models,2,Hard,ML,Advanced ML
+Explain deep neural networks,2,Hard,ML,Deep Learning
+What is model deployment?,2,Hard,ML,MLOps
+Explain unsupervised clustering methods,2,Hard,ML,Clustering
+Differentiate supervised and semi supervised learning,2,Hard,ML,Advanced ML
+Explain recommendation systems in ML,2,Hard,ML,Recommendation Systems
+Explain recurrent neural networks,2,Hard,ML,Deep Learning
+What is reward function in reinforcement learning?,2,Hard,ML,Reinforcement Learning
+Explain activation functions,2,Hard,ML,Deep Learning
+Differentiate boosting algorithms,2,Hard,ML,Ensemble Learning
+Explain ML pipeline architecture,2,Hard,ML,MLOps
+Explain ML lifecycle,10,Easy,ML,Introduction to ML
+Describe supervised learning techniques,10,Easy,ML,Supervised Learning
+Explain regression models,10,Easy,ML,Regression
+Describe clustering methods,10,Easy,ML,Clustering
+Explain decision tree algorithms,10,Easy,ML,Decision Trees
+Describe neural network basics,10,Easy,ML,Neural Networks
+Explain training and testing process in ML,10,Easy,ML,Data Preprocessing
+Describe feature engineering basics,10,Easy,ML,Feature Engineering
+Explain classification algorithms,10,Easy,ML,Classification
+Describe applications of machine learning,10,Easy,ML,Introduction to ML
+Explain random forest algorithm,10,Medium,ML,Ensemble Learning
+Describe feature engineering methods,10,Medium,ML,Feature Engineering
+Explain logistic regression with example,10,Medium,ML,Regression
+Describe ensemble learning methods,10,Medium,ML,Ensemble Learning
+Explain support vector machines,10,Medium,ML,SVM
+Describe cross validation techniques,10,Medium,ML,Model Evaluation
+Explain KNN algorithm with example,10,Medium,ML,KNN
+Describe clustering algorithms in detail,10,Medium,ML,Clustering
+Explain model evaluation metrics,10,Medium,ML,Model Evaluation
+Describe gradient descent algorithm,10,Medium,ML,Optimization
+Explain CNN architecture,10,Hard,ML,Deep Learning
+Describe RNN architecture,10,Hard,ML,Deep Learning
+Explain backpropagation in detail,10,Hard,ML,Deep Learning
+Describe transfer learning process,10,Hard,ML,Deep Learning
+Explain bias variance tradeoff with example,10,Hard,ML,Model Optimization
+Describe deep learning architecture,10,Hard,ML,Deep Learning
+Explain reinforcement learning architecture,10,Hard,ML,Reinforcement Learning
+Describe PCA dimensionality reduction,10,Hard,ML,Dimensionality Reduction
+Explain generative and discriminative models,10,Hard,ML,Advanced ML
+Describe ML deployment pipeline,10,Hard,ML,MLOps
+Define Software Engineering,2,Easy,SE,Introduction
+What is SDLC?,2,Easy,SE,SDLC
+Define feasibility study,2,Easy,SE,Feasibility Study
+What is software testing?,2,Easy,SE,Testing
+Define debugging,2,Easy,SE,Testing
+What is software maintenance?,2,Easy,SE,Maintenance
+Define waterfall model,2,Easy,SE,Process Models
+What is agile model?,2,Easy,SE,Process Models
+Define software requirement specification,2,Easy,SE,Requirements
+What is verification?,2,Easy,SE,Testing
+Define validation,2,Easy,SE,Testing
+What is prototyping?,2,Easy,SE,Process Models
+Define software process,2,Easy,SE,Software Process
+What is black box testing?,2,Easy,SE,Testing
+Define white box testing,2,Easy,SE,Testing
+What is requirement engineering?,2,Easy,SE,Requirements
+Define software reliability,2,Easy,SE,Quality
+What is software quality?,2,Easy,SE,Quality
+Define project management,2,Easy,SE,Project Management
+What is CASE tool?,2,Easy,SE,CASE Tools
+Differentiate verification and validation,2,Medium,SE,Testing
+Explain software testing methods,2,Medium,SE,Testing
+Explain black box testing,2,Medium,SE,Testing
+Explain white box testing,2,Medium,SE,Testing
+What is risk management?,2,Medium,SE,Risk Management
+Explain agile methodology,2,Medium,SE,Process Models
+Differentiate functional and non functional requirements,2,Medium,SE,Requirements
+Explain software metrics,2,Medium,SE,Metrics
+What is software quality assurance?,2,Medium,SE,Quality
+Explain spiral model,2,Medium,SE,Process Models
+Differentiate alpha and beta testing,2,Medium,SE,Testing
+Explain requirement analysis,2,Medium,SE,Requirements
+What is software configuration management?,2,Medium,SE,SCM
+Explain incremental model,2,Medium,SE,Process Models
+What is unit testing?,2,Medium,SE,Testing
+Explain integration testing,2,Medium,SE,Testing
+Differentiate validation and testing,2,Medium,SE,Testing
+Explain software design process,2,Medium,SE,Design
+What is project scheduling?,2,Medium,SE,Project Management
+Explain RAD model,2,Medium,SE,Process Models
+Explain cohesion and coupling,2,Hard,SE,Design
+Differentiate coupling and cohesion,2,Hard,SE,Design
+Explain capability maturity model,2,Hard,SE,CMM
+Describe software architecture,2,Hard,SE,Architecture
+Explain integration testing strategies,2,Hard,SE,Testing
+Describe software reliability models,2,Hard,SE,Reliability
+Explain software project estimation,2,Hard,SE,Project Management
+Differentiate risk avoidance and mitigation,2,Hard,SE,Risk Management
+Explain requirement engineering process,2,Hard,SE,Requirements
+Describe software evolution process,2,Hard,SE,Maintenance
+Explain reverse engineering,2,Hard,SE,Maintenance
+Differentiate static and dynamic testing,2,Hard,SE,Testing
+Explain software reengineering,2,Hard,SE,Maintenance
+Describe formal technical reviews,2,Hard,SE,Reviews
+Explain software process models,2,Hard,SE,Process Models
+Differentiate verification techniques,2,Hard,SE,Testing
+Explain software maintenance types,2,Hard,SE,Maintenance
+Describe defect management process,2,Hard,SE,Quality
+Explain project risk analysis techniques,2,Hard,SE,Risk Management
+Describe advanced testing strategies,2,Hard,SE,Testing
+Explain SDLC phases,10,Easy,SE,SDLC
+Describe waterfall model,10,Easy,SE,Process Models
+Explain agile methodology basics,10,Easy,SE,Process Models
+Describe software testing concepts,10,Easy,SE,Testing
+Explain requirement engineering process,10,Easy,SE,Requirements
+Describe software maintenance activities,10,Easy,SE,Maintenance
+Explain software quality concepts,10,Easy,SE,Quality
+Describe prototyping model,10,Easy,SE,Process Models
+Explain black box testing methods,10,Easy,SE,Testing
+Describe software project management basics,10,Easy,SE,Project Management
+Explain software quality assurance methods,10,Medium,SE,Quality
+Describe black box and white box testing,10,Medium,SE,Testing
+Explain software metrics with examples,10,Medium,SE,Metrics
+Describe spiral model with diagram,10,Medium,SE,Process Models
+Explain agile vs waterfall model,10,Medium,SE,Process Models
+Describe software project scheduling methods,10,Medium,SE,Project Management
+Explain requirement analysis techniques,10,Medium,SE,Requirements
+Describe integration testing approaches,10,Medium,SE,Testing
+Explain RAD and incremental models,10,Medium,SE,Process Models
+Describe software configuration management,10,Medium,SE,SCM
+Explain cohesion and coupling with examples,10,Hard,SE,Design
+Describe capability maturity model,10,Hard,SE,CMM
+Explain software reliability models,10,Hard,SE,Reliability
+Describe requirement engineering lifecycle,10,Hard,SE,Requirements
+Explain advanced testing strategies,10,Hard,SE,Testing
+Describe software architecture design process,10,Hard,SE,Architecture
+Explain software project estimation techniques,10,Hard,SE,Project Management
+Describe reverse engineering concepts,10,Hard,SE,Maintenance
+Explain defect management lifecycle,10,Hard,SE,Quality
+Describe software evolution and reengineering,10,Hard,SE,Maintenance
+Define Operating System,2,Easy,OS,Memory Management
+What is process?,2,Easy,OS,Deadlocks
+Define thread,2,Easy,OS,File Systems
+What is scheduling?,2,Easy,OS,Process Management
+Define deadlock,2,Easy,OS,CPU Scheduling
+What is paging?,2,Easy,OS,Memory Management
+Define virtual memory,2,Easy,OS,Deadlocks
+What is multitasking?,2,Easy,OS,File Systems
+Define kernel,2,Easy,OS,Process Management
+What is semaphore?,2,Easy,OS,CPU Scheduling
+Define context switching,2,Easy,OS,Memory Management
+What is fragmentation?,2,Easy,OS,Deadlocks
+Define file system,2,Easy,OS,File Systems
+What is CPU scheduling?,2,Easy,OS,Process Management
+Define process synchronization,2,Easy,OS,CPU Scheduling
+What is starvation?,2,Easy,OS,Memory Management
+Define spooling,2,Easy,OS,Deadlocks
+What is thrashing?,2,Easy,OS,File Systems
+Define distributed OS,2,Easy,OS,Process Management
+What is memory management?,2,Easy,OS,CPU Scheduling
+Differentiate process and thread,2,Medium,OS,Memory Management
+Explain CPU scheduling,2,Medium,OS,Deadlocks
+What is context switching?,2,Medium,OS,File Systems
+Explain paging technique,2,Medium,OS,Process Management
+What is fragmentation?,2,Medium,OS,CPU Scheduling
+Explain deadlock prevention,2,Medium,OS,Memory Management
+What is process synchronization?,2,Medium,OS,Deadlocks
+Explain FCFS scheduling,2,Medium,OS,File Systems
+What is starvation?,2,Medium,OS,Process Management
+Explain round robin scheduling,2,Medium,OS,CPU Scheduling
+Differentiate paging and segmentation,2,Medium,OS,Memory Management
+Explain semaphore operations,2,Medium,OS,Deadlocks
+What is interprocess communication?,2,Medium,OS,File Systems
+Explain virtual memory concepts,2,Medium,OS,Process Management
+Differentiate logical and physical address,2,Medium,OS,CPU Scheduling
+Explain file allocation methods,2,Medium,OS,Memory Management
+What is demand paging?,2,Medium,OS,Deadlocks
+Explain multiprogramming,2,Medium,OS,File Systems
+What is disk scheduling?,2,Medium,OS,Process Management
+Explain memory allocation techniques,2,Medium,OS,CPU Scheduling
+Explain bankers algorithm,2,Hard,OS,Memory Management
+Differentiate paging and segmentation in detail,2,Hard,OS,Deadlocks
+Explain multilevel queue scheduling,2,Hard,OS,File Systems
+What is thrashing in OS?,2,Hard,OS,Process Management
+Explain demand paging process,2,Hard,OS,CPU Scheduling
+Describe file allocation strategies,2,Hard,OS,Memory Management
+Explain advanced memory management techniques,2,Hard,OS,Deadlocks
+Differentiate logical and physical memory management,2,Hard,OS,File Systems
+Explain interprocess communication methods,2,Hard,OS,Process Management
+Describe distributed operating systems,2,Hard,OS,CPU Scheduling
+Explain deadlock detection algorithms,2,Hard,OS,Memory Management
+Describe disk scheduling algorithms,2,Hard,OS,Deadlocks
+Explain virtual memory architecture,2,Hard,OS,File Systems
+Differentiate preemptive and non preemptive scheduling,2,Hard,OS,Process Management
+Explain synchronization problems in OS,2,Hard,OS,CPU Scheduling
+Describe multithreading concepts,2,Hard,OS,Memory Management
+Explain process state transitions,2,Hard,OS,Deadlocks
+Describe operating system services,2,Hard,OS,File Systems
+Explain resource allocation graph,2,Hard,OS,Process Management
+Describe advanced scheduling algorithms,2,Hard,OS,CPU Scheduling
+Explain process management in OS,10,Easy,OS,Memory Management
+Describe CPU scheduling techniques,10,Easy,OS,Deadlocks
+Explain deadlock concepts,10,Easy,OS,File Systems
+Describe memory management basics,10,Easy,OS,Process Management
+Explain paging and segmentation,10,Easy,OS,CPU Scheduling
+Describe file systems in OS,10,Easy,OS,Memory Management
+Explain operating system functions,10,Easy,OS,Deadlocks
+Describe process lifecycle in OS,10,Easy,OS,File Systems
+Explain multitasking concepts,10,Easy,OS,Process Management
+Describe virtual memory basics,10,Easy,OS,CPU Scheduling
+Explain synchronization techniques,10,Medium,OS,Memory Management
+Describe round robin scheduling algorithm,10,Medium,OS,Deadlocks
+Explain virtual memory concepts in detail,10,Medium,OS,File Systems
+Describe process synchronization methods,10,Medium,OS,Process Management
+Explain FCFS scheduling with example,10,Medium,OS,CPU Scheduling
+Describe interprocess communication,10,Medium,OS,Memory Management
+Explain memory allocation methods,10,Medium,OS,Deadlocks
+Describe disk scheduling techniques,10,Medium,OS,File Systems
+Explain demand paging with example,10,Medium,OS,Process Management
+Describe semaphore mechanisms,10,Medium,OS,CPU Scheduling
+Explain bankers algorithm in detail,10,Hard,OS,Memory Management
+Describe distributed operating systems,10,Hard,OS,Deadlocks
+Explain multilevel queue scheduling,10,Hard,OS,File Systems
+Describe advanced memory allocation strategies,10,Hard,OS,Process Management
+Explain demand paging techniques in detail,10,Hard,OS,CPU Scheduling
+Describe advanced deadlock handling methods,10,Hard,OS,Memory Management
+Explain virtual memory architecture,10,Hard,OS,Deadlocks
+Describe synchronization problems and solutions,10,Hard,OS,File Systems
+Explain advanced scheduling algorithms with examples,10,Hard,OS,Process Management
+Describe operating system security mechanisms,10,Hard,OS,CPU Scheduling
+Define Computer Network,2,Easy,CN,Routing
+What is topology?,2,Easy,CN,Network Security
+Define protocol,2,Easy,CN,Protocols
+What is LAN?,2,Easy,CN,OSI Model
+Define WAN,2,Easy,CN,TCP/IP
+What is IP address?,2,Easy,CN,Routing
+Define router,2,Easy,CN,Network Security
+What is switch?,2,Easy,CN,Protocols
+Define DNS,2,Easy,CN,OSI Model
+What is HTTP?,2,Easy,CN,TCP/IP
+Define modem,2,Easy,CN,Routing
+What is bandwidth?,2,Easy,CN,Network Security
+Define network security,2,Easy,CN,Protocols
+What is MAC address?,2,Easy,CN,OSI Model
+Define transmission media,2,Easy,CN,TCP/IP
+What is packet switching?,2,Easy,CN,Routing
+Define firewall,2,Easy,CN,Network Security
+What is browser?,2,Easy,CN,Protocols
+Define gateway,2,Easy,CN,OSI Model
+What is intranet?,2,Easy,CN,TCP/IP
+Differentiate hub and switch,2,Medium,CN,Routing
+Explain OSI model,2,Medium,CN,Network Security
+What is TCP/IP?,2,Medium,CN,Protocols
+Explain subnetting,2,Medium,CN,OSI Model
+What is routing?,2,Medium,CN,TCP/IP
+Explain network security basics,2,Medium,CN,Routing
+Differentiate TCP and UDP,2,Medium,CN,Network Security
+Explain congestion control,2,Medium,CN,Protocols
+What is packet switching?,2,Medium,CN,OSI Model
+Explain error detection methods,2,Medium,CN,TCP/IP
+Differentiate IPv4 and IPv6,2,Medium,CN,Routing
+Explain DNS working,2,Medium,CN,Network Security
+What is socket programming?,2,Medium,CN,Protocols
+Explain routing protocols,2,Medium,CN,OSI Model
+What is cryptography?,2,Medium,CN,TCP/IP
+Explain flow control methods,2,Medium,CN,Routing
+Differentiate circuit and packet switching,2,Medium,CN,Network Security
+Explain transport layer functions,2,Medium,CN,Protocols
+What is multiplexing?,2,Medium,CN,OSI Model
+Explain wireless communication basics,2,Medium,CN,TCP/IP
+Explain sliding window protocol,2,Hard,CN,Routing
+Differentiate IPv4 and IPv6 in detail,2,Hard,CN,Network Security
+Explain routing algorithms,2,Hard,CN,Protocols
+Describe transport layer functions,2,Hard,CN,OSI Model
+Explain congestion avoidance techniques,2,Hard,CN,TCP/IP
+Describe cryptography techniques,2,Hard,CN,Routing
+Explain socket programming concepts,2,Hard,CN,Network Security
+Differentiate circuit and packet switching in detail,2,Hard,CN,Protocols
+Explain firewall concepts,2,Hard,CN,OSI Model
+Describe network virtualization,2,Hard,CN,TCP/IP
+Explain leaky bucket algorithm,2,Hard,CN,Routing
+Describe subnet masking process,2,Hard,CN,Network Security
+Explain distance vector routing,2,Hard,CN,Protocols
+Describe link state routing algorithm,2,Hard,CN,OSI Model
+Explain network layer services,2,Hard,CN,TCP/IP
+Describe error correction techniques,2,Hard,CN,Routing
+Explain HTTPS working mechanism,2,Hard,CN,Network Security
+Describe VPN concepts,2,Hard,CN,Protocols
+Explain advanced network security mechanisms,2,Hard,CN,OSI Model
+Describe wireless network architecture,2,Hard,CN,TCP/IP
+Explain OSI reference model,10,Easy,CN,Routing
+Describe TCP/IP architecture,10,Easy,CN,Network Security
+Explain network topologies,10,Easy,CN,Protocols
+Describe switching techniques,10,Easy,CN,OSI Model
+Explain routing concepts,10,Easy,CN,TCP/IP
+Describe network devices,10,Easy,CN,Routing
+Explain transmission media types,10,Easy,CN,Network Security
+Describe LAN and WAN concepts,10,Easy,CN,Protocols
+Explain IP addressing basics,10,Easy,CN,OSI Model
+Describe basic network security concepts,10,Easy,CN,TCP/IP
+Explain congestion control methods,10,Medium,CN,Routing
+Describe subnetting with examples,10,Medium,CN,Network Security
+Explain TCP and UDP protocols,10,Medium,CN,Protocols
+Describe error detection techniques,10,Medium,CN,OSI Model
+Explain DNS working process,10,Medium,CN,TCP/IP
+Describe network security basics,10,Medium,CN,Routing
+Explain routing protocols with examples,10,Medium,CN,Network Security
+Describe flow control techniques,10,Medium,CN,Protocols
+Explain wireless communication systems,10,Medium,CN,OSI Model
+Describe transport layer services,10,Medium,CN,TCP/IP
+Explain sliding window protocol in detail,10,Hard,CN,Routing
+Describe IPv4 and IPv6 comparison,10,Hard,CN,Network Security
+Explain routing algorithms with examples,10,Hard,CN,Protocols
+Describe cryptography techniques,10,Hard,CN,OSI Model
+Explain socket programming concepts,10,Hard,CN,TCP/IP
+Describe advanced firewall mechanisms,10,Hard,CN,Routing
+Explain VPN architecture and working,10,Hard,CN,Network Security
+Describe advanced network security techniques,10,Hard,CN,Protocols
+Explain wireless network architecture in detail,10,Hard,CN,OSI Model
+Describe congestion avoidance algorithms,10,Hard,CN,TCP/IP
+Define Operating System,2,Easy,OS,Introduction
+What is process?,2,Easy,OS,Process Management
+Define thread,2,Easy,OS,Process Management
+What is scheduling?,2,Easy,OS,CPU Scheduling
+Define deadlock,2,Easy,OS,Deadlocks
+What is paging?,2,Easy,OS,Memory Management
+Define virtual memory,2,Easy,OS,Memory Management
+What is multitasking?,2,Easy,OS,Process Management
+Define kernel,2,Easy,OS,Operating System Structure
+What is semaphore?,2,Easy,OS,Process Synchronization
+Define context switching,2,Easy,OS,Process Management
+What is fragmentation?,2,Easy,OS,Memory Management
+Define file system,2,Easy,OS,File Systems
+What is CPU scheduling?,2,Easy,OS,CPU Scheduling
+Define process synchronization,2,Easy,OS,Process Synchronization
+What is starvation?,2,Easy,OS,CPU Scheduling
+Define spooling,2,Easy,OS,I/O Management
+What is thrashing?,2,Easy,OS,Memory Management
+Define distributed OS,2,Easy,OS,Distributed Systems
+What is memory management?,2,Easy,OS,Memory Management
+Differentiate process and thread,2,Medium,OS,Process Management
+Explain CPU scheduling,2,Medium,OS,CPU Scheduling
+What is context switching?,2,Medium,OS,Process Management
+Explain paging technique,2,Medium,OS,Memory Management
+What is fragmentation?,2,Medium,OS,Memory Management
+Explain deadlock prevention,2,Medium,OS,Deadlocks
+What is process synchronization?,2,Medium,OS,Process Synchronization
+Explain FCFS scheduling,2,Medium,OS,CPU Scheduling
+What is starvation?,2,Medium,OS,CPU Scheduling
+Explain round robin scheduling,2,Medium,OS,CPU Scheduling
+Differentiate paging and segmentation,2,Medium,OS,Memory Management
+Explain semaphore operations,2,Medium,OS,Process Synchronization
+What is interprocess communication?,2,Medium,OS,IPC
+Explain virtual memory concepts,2,Medium,OS,Memory Management
+Differentiate logical and physical address,2,Medium,OS,Memory Management
+Explain file allocation methods,2,Medium,OS,File Systems
+What is demand paging?,2,Medium,OS,Memory Management
+Explain multiprogramming,2,Medium,OS,Process Management
+What is disk scheduling?,2,Medium,OS,Disk Scheduling
+Explain memory allocation techniques,2,Medium,OS,Memory Management
+Explain bankers algorithm,2,Hard,OS,Deadlocks
+Differentiate paging and segmentation in detail,2,Hard,OS,Memory Management
+Explain multilevel queue scheduling,2,Hard,OS,CPU Scheduling
+What is thrashing in OS?,2,Hard,OS,Memory Management
+Explain demand paging process,2,Hard,OS,Memory Management
+Describe file allocation strategies,2,Hard,OS,File Systems
+Explain advanced memory management techniques,2,Hard,OS,Memory Management
+Differentiate logical and physical memory management,2,Hard,OS,Memory Management
+Explain interprocess communication methods,2,Hard,OS,IPC
+Describe distributed operating systems,2,Hard,OS,Distributed Systems
+Explain deadlock detection algorithms,2,Hard,OS,Deadlocks
+Describe disk scheduling algorithms,2,Hard,OS,Disk Scheduling
+Explain virtual memory architecture,2,Hard,OS,Memory Management
+Differentiate preemptive and non preemptive scheduling,2,Hard,OS,CPU Scheduling
+Explain synchronization problems in OS,2,Hard,OS,Process Synchronization
+Describe multithreading concepts,2,Hard,OS,Process Management
+Explain process state transitions,2,Hard,OS,Process Management
+Describe operating system services,2,Hard,OS,Operating System Structure
+Explain resource allocation graph,2,Hard,OS,Deadlocks
+Describe advanced scheduling algorithms,2,Hard,OS,CPU Scheduling
+Define Computer Network,2,Easy,CN,Introduction
+What is topology?,2,Easy,CN,Network Topologies
+Define protocol,2,Easy,CN,Protocols
+What is LAN?,2,Easy,CN,Network Types
+Define WAN,2,Easy,CN,Network Types
+What is IP address?,2,Easy,CN,IP Addressing
+Define router,2,Easy,CN,Network Devices
+What is switch?,2,Easy,CN,Network Devices
+Define DNS,2,Easy,CN,Application Layer
+What is HTTP?,2,Easy,CN,Application Layer
+Define modem,2,Easy,CN,Network Devices
+What is bandwidth?,2,Easy,CN,Transmission Media
+Define network security,2,Easy,CN,Network Security
+What is MAC address?,2,Easy,CN,Data Link Layer
+Define transmission media,2,Easy,CN,Transmission Media
+What is packet switching?,2,Easy,CN,Switching Techniques
+Define firewall,2,Easy,CN,Network Security
+What is browser?,2,Easy,CN,Application Layer
+Define gateway,2,Easy,CN,Network Devices
+What is intranet?,2,Easy,CN,Network Types
+Differentiate hub and switch,2,Medium,CN,Network Devices
+Explain OSI model,2,Medium,CN,OSI Model
+What is TCP/IP?,2,Medium,CN,TCP/IP
+Explain subnetting,2,Medium,CN,IP Addressing
+What is routing?,2,Medium,CN,Routing
+Explain network security basics,2,Medium,CN,Network Security
+Differentiate TCP and UDP,2,Medium,CN,Transport Layer
+Explain congestion control,2,Medium,CN,Congestion Control
+What is packet switching?,2,Medium,CN,Switching Techniques
+Explain error detection methods,2,Medium,CN,Error Control
+Differentiate IPv4 and IPv6,2,Medium,CN,IP Addressing
+Explain DNS working,2,Medium,CN,Application Layer
+What is socket programming?,2,Medium,CN,Socket Programming
+Explain routing protocols,2,Medium,CN,Routing
+What is cryptography?,2,Medium,CN,Network Security
+Explain flow control methods,2,Medium,CN,Flow Control
+Differentiate circuit and packet switching,2,Medium,CN,Switching Techniques
+Explain transport layer functions,2,Medium,CN,Transport Layer
+What is multiplexing?,2,Medium,CN,Multiplexing
+Explain wireless communication basics,2,Medium,CN,Wireless Networks
+Explain sliding window protocol,2,Hard,CN,Flow Control
+Differentiate IPv4 and IPv6 in detail,2,Hard,CN,IP Addressing
+Explain routing algorithms,2,Hard,CN,Routing
+Describe transport layer functions,2,Hard,CN,Transport Layer
+Explain congestion avoidance techniques,2,Hard,CN,Congestion Control
+Describe cryptography techniques,2,Hard,CN,Network Security
+Explain socket programming concepts,2,Hard,CN,Socket Programming
+Differentiate circuit and packet switching in detail,2,Hard,CN,Switching Techniques
+Explain firewall concepts,2,Hard,CN,Network Security
+Describe network virtualization,2,Hard,CN,Network Virtualization
+Explain leaky bucket algorithm,2,Hard,CN,Congestion Control
+Describe subnet masking process,2,Hard,CN,IP Addressing
+Explain distance vector routing,2,Hard,CN,Routing
+Describe link state routing algorithm,2,Hard,CN,Routing
+Explain network layer services,2,Hard,CN,Network Layer
+Describe error correction techniques,2,Hard,CN,Error Control
+Explain HTTPS working mechanism,2,Hard,CN,Network Security
+Describe VPN concepts,2,Hard,CN,Network Security
+Explain advanced network security mechanisms,2,Hard,CN,Network Security
+Describe wireless network architecture,2,Hard,CN,Wireless Networks
