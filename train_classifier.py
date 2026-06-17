@@ -9,7 +9,6 @@ from sklearn.metrics import accuracy_score
 import joblib
 
 data = pd.read_csv(r"datasets\questions.csv")
-
 X = data["Question"]
 
 targets = {

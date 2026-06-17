@@ -8,7 +8,14 @@ from tensorflow.keras.layers import Embedding, LSTM, Dense
 import numpy as np
 
 data = pd.read_csv("datasets/questions.csv")
-texts = data["Question"].astype(str)
+
+texts = (
+    data["Subject"].astype(str)
+    + " "
+    + data["Marks"].astype(str)
+    + " "
+    + data["Question"].astype(str)
+)
 
 tokenizer = Tokenizer()
 tokenizer.fit_on_texts(texts)

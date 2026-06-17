@@ -12,15 +12,16 @@ with open(
     "models/tokenizer_generator.pkl",
     "rb"
 ) as f:
-
     tokenizer = pickle.load(f)
 
-max_len = 8
+max_len = 12
 
 
-def generate(seed_text):
+def generate_question(subject, marks):
 
-    for _ in range(5):
+    seed_text = f"{subject} {marks}"
+
+    for _ in range(10):
 
         token_list = tokenizer.texts_to_sequences(
             [seed_text]
@@ -32,13 +33,15 @@ def generate(seed_text):
             padding="pre"
         )
 
-        predicted = np.argmax(
-            model.predict(
-                token_list,
-                verbose=0
-            ),
-            axis=-1
+        prediction = model.predict(
+            token_list,
+            verbose=0
         )[0]
+
+        predicted = np.random.choice(
+            len(prediction),
+            p=prediction
+        )
 
         output = ""
 
@@ -53,15 +56,14 @@ def generate(seed_text):
     return seed_text
 
 
-subject = input("Enter Subject (AI/ML/CN/OS/SE): ")
-marks = input("Enter Marks (2/10): ")
+def generate_multiple(subject, marks, count):
 
-prompt = f"{subject} {marks}"
+    questions = []
 
-print(
-    "\nGenerated Question:"
-)
+    for _ in range(count):
 
-print(
-    generate(prompt.lower())
-)
+        questions.append(
+            generate_question(subject, marks)
+        )
+
+    return questions

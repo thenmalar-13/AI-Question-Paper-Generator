@@ -1,55 +1,19 @@
-
 import streamlit as st
-import pandas as pd
-import random
 from docx import Document
+from ai_paper_generator import generate_multiple
 
 st.set_page_config(
     page_title="AI Question Paper Generator",
-    page_icon="📄",
+    page_icon="🎓",
     layout="wide"
 )
+
+# ------------------ UI ------------------
+
 st.markdown("""
-<style>
-
-.main{
-    background-color:#f5f7fa;
-}
-
-h1{
-    text-align:center;
-    color:#1E3A8A;
-}
-
-.stButton button{
-    background-color:#2563EB;
-    color:white;
-    border-radius:12px;
-    height:50px;
-    width:100%;
-    font-size:18px;
-    font-weight:bold;
-}
-
-.stDownloadButton button{
-    background-color:#16A34A;
-    color:white;
-    border-radius:12px;
-}
-
-</style>
-""", unsafe_allow_html=True)
-
-# ---------- LOAD DATA ----------
-df = pd.read_csv("datasets/questions.csv")
-
-# ---------- TITLE ----------
-st.markdown("""
-<h1>🎓 AI QUESTION PAPER GENERATOR</h1>
-<h4 style='text-align:center;'>
-Generate Smart University Question Papers Automatically
-</h4>
-""", unsafe_allow_html=True)
+# 🎓 AI Question Paper Generator
+Generate AI-created university question papers using TensorFlow
+""")
 
 st.markdown("---")
 
@@ -80,300 +44,105 @@ exam_name = st.text_input(
 
 st.markdown("---")
 
-mode = st.radio(
-    "Choose Generation Mode",
-    ["Automatic Blueprint", "Custom Blueprint"]
-)
+subjects = [
+    "AI",
+    "ML",
+    "CN",
+    "OS",
+    "SE"
+]
 
-# ---------- AUTOMATIC ----------
-# ---------- AUTOMATIC ----------
-if mode == "Automatic Blueprint":
+blueprint = {}
 
-    st.subheader("📘 Automatic Blueprint")
+st.subheader("Custom Blueprint")
 
-    col1, col2 = st.columns(2)
+for subject in subjects:
 
-    with col1:
-        partA_count = st.number_input(
-            "Number of 2-Mark Questions",
-            min_value=1,
+    st.markdown(f"### {subject}")
+
+    c1, c2 = st.columns(2)
+
+    with c1:
+        two_marks = st.number_input(
+            f"{subject} - 2 Marks",
+            min_value=0,
             max_value=20,
-            value=5
+            value=0,
+            key=f"{subject}_2"
         )
 
-    with col2:
-        partB_count = st.number_input(
-            "Number of 10-Mark Questions",
-            min_value=1,
+    with c2:
+        ten_marks = st.number_input(
+            f"{subject} - 10 Marks",
+            min_value=0,
             max_value=20,
-            value=5
+            value=0,
+            key=f"{subject}_10"
         )
 
-    include_ai = st.checkbox(
-        "Include AI Generated Questions (Experimental)"
-    )
+    blueprint[subject] = {
+        "2": two_marks,
+        "10": ten_marks
+    }
 
-    st.info(
-        f"""
-        Part A : {partA_count} Questions
+# ------------------ GENERATE ------------------
 
-        Part B : {partB_count} Questions
+if st.button("🚀 Generate AI Question Paper"):
 
-        Estimated Total Marks :
-        {(partA_count*2)+(partB_count*10)}
-        """
-    )
-
-    if st.button("🚀 Generate Paper"):
-
-        partA = df[df["Marks"].astype(str) == "2"]
-        partB = df[df["Marks"].astype(str) == "10"]
-
-        selectedA = partA.sample(
-            min(partA_count, len(partA))
-        )
-
-        selectedB = partB.sample(
-            min(partB_count, len(partB))
-        )
-
-        total_marks = (
-            len(selectedA)*2 +
-            len(selectedB)*10
-        )
-
-        st.markdown(f"""
-# 🏫 {college}
-
-### Department of {department}
-
-### {exam_name}
-
-### Semester {semester}
-
-<div style='text-align:right;font-size:22px'>
-<b>TOTAL MARKS : {total_marks}</b>
-</div>
-
----
-""", unsafe_allow_html=True)
-
-        st.markdown("## PART - A (2 Marks Each)")
-
-        qno = 1
-
-        for _, row in selectedA.iterrows():
-
-            st.write(
-                f"{qno}. {row['Question']} ({row['Subject']})"
-            )
-
-            qno += 1
-
-        st.success(
-            f"{len(selectedA)} × 2 = {len(selectedA)*2} Marks"
-        )
-
-        st.markdown("---")
-
-        st.markdown("## PART - B (10 Marks Each)")
-
-        for _, row in selectedB.iterrows():
-
-            st.write(
-                f"{qno}. {row['Question']} ({row['Subject']})"
-            )
-
-            qno += 1
-
-        st.success(
-            f"{len(selectedB)} × 10 = {len(selectedB)*10} Marks"
-        )
-
-        st.markdown("---")
-
-        st.subheader(
-            f"TOTAL MARKS : {total_marks}"
-        )
-
-        st.markdown("### 📊 Subject Distribution")
-
-        all_questions = pd.concat(
-            [selectedA, selectedB]
-        )
-
-        subject_count = (
-            all_questions["Subject"]
-            .value_counts()
-        )
-
-        st.dataframe(subject_count)
-
-        # DOCX EXPORT
-
-        doc = Document()
-
-        doc.add_heading(
-            college,
-            level=1
-        )
-
-        doc.add_paragraph(
-            f"Department : {department}"
-        )
-
-        doc.add_paragraph(
-            f"Exam : {exam_name}"
-        )
-
-        doc.add_paragraph(
-            f"Semester : {semester}"
-        )
-
-        doc.add_paragraph(
-            f"TOTAL MARKS : {total_marks}"
-        )
-
-        doc.add_paragraph("")
-
-        doc.add_heading(
-            "PART A (2 Marks Each)",
-            level=2
-        )
-
-        qno = 1
-
-        for _, row in selectedA.iterrows():
-
-            doc.add_paragraph(
-                f"{qno}. {row['Question']} ({row['Subject']})"
-            )
-
-            qno += 1
-
-        doc.add_paragraph(
-            f"{len(selectedA)} x 2 = {len(selectedA)*2} Marks"
-        )
-
-        doc.add_heading(
-            "PART B (10 Marks Each)",
-            level=2
-        )
-
-        for _, row in selectedB.iterrows():
-
-            doc.add_paragraph(
-                f"{qno}. {row['Question']} ({row['Subject']})"
-            )
-
-            qno += 1
-
-        doc.add_paragraph(
-            f"{len(selectedB)} x 10 = {len(selectedB)*10} Marks"
-        )
-
-        doc.add_paragraph(
-            f"TOTAL MARKS : {total_marks}"
-        )
-
-        doc.save("question_paper.docx")
-
-        with open(
-            "question_paper.docx",
-            "rb"
-        ) as file:
-
-            st.download_button(
-                "📥 Download Question Paper DOCX",
-                file,
-                file_name="question_paper.docx"
-            )
-# ---------- CUSTOM ----------
-else:
-
-    st.subheader("Custom Blueprint")
-
-    subjects = ["AI", "ML", "OS", "CN", "SE"]
-
-    blueprint = {}
+    paper = []
 
     for subject in subjects:
 
-        st.markdown(f"### {subject}")
+        two_count = blueprint[subject]["2"]
+        ten_count = blueprint[subject]["10"]
 
-        c1, c2 = st.columns(2)
+        # 2 MARK QUESTIONS
 
-        with c1:
-            two = st.number_input(
-                f"{subject} - 2 Marks",
-                min_value=0,
-                max_value=10,
-                value=1,
-                key=f"{subject}_2"
+        if two_count > 0:
+
+            questions = generate_multiple(
+                subject,
+                2,
+                two_count
             )
 
-        with c2:
-            ten = st.number_input(
-                f"{subject} - 10 Marks",
-                min_value=0,
-                max_value=10,
-                value=1,
-                key=f"{subject}_10"
+            for q in questions:
+
+                paper.append({
+                    "Question": q,
+                    "Marks": 2,
+                    "Subject": subject
+                })
+
+        # 10 MARK QUESTIONS
+
+        if ten_count > 0:
+
+            questions = generate_multiple(
+                subject,
+                10,
+                ten_count
             )
 
-        blueprint[subject] = {
-            "2": two,
-            "10": ten
-        }
+            for q in questions:
 
-    if st.button("🚀 Generate Custom Paper"):
+                paper.append({
+                    "Question": q,
+                    "Marks": 10,
+                    "Subject": subject
+                })
 
-        paper = []
+    total_marks = sum(
+        q["Marks"]
+        for q in paper
+    )
 
-        for subject in subjects:
+    st.success(
+        f"Question Paper Generated Successfully | Total Marks = {total_marks}"
+    )
 
-            rows2 = df[
-                (df["Subject"] == subject) &
-                (df["Marks"].astype(str) == "2")
-            ]
-
-            rows10 = df[
-                (df["Subject"] == subject) &
-                (df["Marks"].astype(str) == "10")
-            ]
-
-            if len(rows2) > 0:
-
-                sample2 = rows2.sample(
-                    min(
-                        blueprint[subject]["2"],
-                        len(rows2)
-                    )
-                )
-
-                paper.extend(
-                    sample2.to_dict("records")
-                )
-
-            if len(rows10) > 0:
-                sample10 = rows10.sample(
-                    min(
-                        blueprint[subject]["10"],
-                        len(rows10)
-                    )
-                )
-
-                paper.extend(
-                    sample10.to_dict("records")
-                )
-
-        total_marks = sum(
-            int(q["Marks"])
-            for q in paper
-        )
-
-        st.markdown(f"""
-## {college}
+    st.markdown(f"""
+## 🏫 {college}
 
 ### Department of {department}
 
@@ -384,91 +153,118 @@ else:
 # TOTAL MARKS : {total_marks}
 """)
 
-        paper.sort(
-            key=lambda x: int(x["Marks"])
-        )
+    # ---------------- PART A ----------------
 
-        qno = 1
+    st.markdown("## PART A (2 Marks)")
 
-        st.markdown("## QUESTION PAPER")
+    qno = 1
 
-        for q in paper:
+    for q in paper:
+
+        if q["Marks"] == 2:
 
             st.write(
-                f"{qno}. {q['Question']} ({q['Subject']})"
+                f"{qno}. {q['Question']}"
             )
 
             qno += 1
 
-        st.markdown("---")
-
-        st.subheader(
-            f"TOTAL MARKS : {total_marks}"
-        )
-                # ---------- DOCX EXPORT ----------
-
-        doc = Document()
-
-        doc.add_heading(
-            college,
-            level=1
-        )
-
-        doc.add_paragraph(
-            f"Department : {department}"
-        )
-
-        doc.add_paragraph(
-            f"Exam : {exam_name}"
-        )
-
-        doc.add_paragraph(
-            f"Semester : {semester}"
-        )
-
-        doc.add_paragraph(
-            f"TOTAL MARKS : {total_marks}"
-        )
-
-        doc.add_paragraph("")
-
-        doc.add_heading(
-            "QUESTION PAPER",
-            level=2
-        )
-
-        qno = 1
-
-        for q in paper:
-
-            doc.add_paragraph(
-                f"{qno}. {q['Question']} ({q['Subject']})"
-            )
-
-            qno += 1
-
-        doc.add_paragraph("")
-        doc.add_paragraph(
-            f"TOTAL MARKS : {total_marks}"
-        )
-
-        doc.save(
-            "custom_question_paper.docx"
-        )
-
-        with open(
-            "custom_question_paper.docx",
-            "rb"
-        ) as file:
-
-            st.download_button(
-                "📥 Download Custom Paper DOCX",
-                file,
-                file_name="custom_question_paper.docx"
-            )
-    
     st.markdown("---")
 
+    # ---------------- PART B ----------------
+
+    st.markdown("## PART B (10 Marks)")
+
+    for q in paper:
+
+        if q["Marks"] == 10:
+
+            st.write(
+                f"{qno}. {q['Question']}"
+            )
+
+            qno += 1
+
+    st.markdown("---")
+
+    st.subheader(
+        f"TOTAL MARKS : {total_marks}"
+    )
+
+    # ---------------- DOCX ----------------
+
+    doc = Document()
+
+    doc.add_heading(
+        college,
+        level=1
+    )
+
+    doc.add_paragraph(
+        f"Department : {department}"
+    )
+
+    doc.add_paragraph(
+        f"Exam : {exam_name}"
+    )
+
+    doc.add_paragraph(
+        f"Semester : {semester}"
+    )
+
+    doc.add_paragraph(
+        f"Total Marks : {total_marks}"
+    )
+
+    doc.add_heading(
+        "PART A (2 Marks)",
+        level=2
+    )
+
+    qno = 1
+
+    for q in paper:
+
+        if q["Marks"] == 2:
+
+            doc.add_paragraph(
+                f"{qno}. {q['Question']}"
+            )
+
+            qno += 1
+
+    doc.add_heading(
+        "PART B (10 Marks)",
+        level=2
+    )
+
+    for q in paper:
+
+        if q["Marks"] == 10:
+
+            doc.add_paragraph(
+                f"{qno}. {q['Question']}"
+            )
+
+            qno += 1
+
+    filename = "AI_Question_Paper.docx"
+
+    doc.save(filename)
+
+    with open(
+        filename,
+        "rb"
+    ) as file:
+
+        st.download_button(
+            "📥 Download DOCX",
+            file,
+            file_name=filename
+        )
+
+st.markdown("---")
+
 st.caption(
-    "🎓 AI Question Paper Generator | Built using Python, Machine Learning, Streamlit and TensorFlow"
+    "Built using TensorFlow, NLP and Streamlit"
 )
