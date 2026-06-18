@@ -4,4 +4,4 @@ numpy
 scikit-learn
 joblib
 python-docx
-tensorflow==2.16.1
+tensorflow==2.20.0
